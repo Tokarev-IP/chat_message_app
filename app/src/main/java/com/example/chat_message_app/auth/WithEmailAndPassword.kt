@@ -12,6 +12,7 @@ fun signInWithEmailAndPassword(login: String, password: String){
         .addOnCompleteListener {
             if (it.isSuccessful) {
                 Log.d("TAG", "signInWithEmail:success")
+
             }
             else Log.d("TAG", "signInWithEmail:error", it.exception)
         }
